@@ -1,8 +1,16 @@
 // import functions and grab DOM elements
+import { getZodiac } from '../fetch-util.js';
+import { renderZodiac } from './utils.js';
 
-// let state
+const zodiacsEl = document.getElementById('zodiacs');
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+async function loadData() {
+    const zodiacs = await getZodiac();
+
+    for (let zodiac of zodiacs) {
+        const zodiacDiv = renderZodiac(zodiac);
+        zodiacsEl.append(zodiacDiv);
+    }
+}
+
+loadData();
