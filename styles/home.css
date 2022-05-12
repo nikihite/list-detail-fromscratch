@@ -24,6 +24,7 @@ h1 {
     font-family: fantasy;
     font-size: 35px;
     color: white;
+    border-radius: 50px;
 }
 
 #zodiacs {
@@ -64,4 +65,8 @@ hr {
     margin-right: auto;
     border-width: 3px;
     color: white;
+}
+
+a {
+    color: lightblue;
 }
