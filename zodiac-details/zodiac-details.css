@@ -25,13 +25,17 @@ p {
     border-radius: 50%;
     padding: 15px;
     margin: 10px;
-    margin-left: 740px;
+}
+
+img {
+    display: flex;
+    justify-content: center;
 }
 
 .zodiac-detail-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 a {
