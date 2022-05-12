@@ -1,4 +1,3 @@
-// import functions and grab DOM elements
 import { getZodiac } from '../fetch-util.js';
 import { renderZodiac } from './utils.js';
 

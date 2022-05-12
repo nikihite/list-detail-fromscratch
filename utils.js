@@ -1,16 +1,3 @@
-import { getZodiac } from '../fetch-util.js';
-
-const zodiacDetailContainer = document.getElementById('zodiac-detail-container');
-
-async function loadData() {
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get('id');
-    const zodiacz = await getZodiac(id);
-    const zodiacInfo = renderZodiac(zodiacz);
-    zodiacDetailContainer.append(zodiacInfo);
-}
-loadData();
-
 export function renderZodiac(zodiac) {
     console.log(zodiac);
     const div = document.createElement('div');
@@ -26,7 +13,7 @@ export function renderZodiac(zodiac) {
     p.textContent = `${zodiac.name} are the ${zodiac.number} air sign of the zodiac. Under the tropical zodiac, the sun transits this sign between ${zodiac.birth_range}. ${zodiac.name} are ruled by ${zodiac.ruling_planet}, and their symbol is ${zodiac.symbol}`;
 
     const a = document.createElement('a');
-    a.href = `/zodiac-details/?id=${zodiac.id}`;
+    a.href = `./zodiac-details/?id=${zodiac.id}`;
 
     div.append(h1, img, p);
     a.append(div);

@@ -8,3 +8,7 @@ export async function getZodiac() {
     return resp.data;
 }
 
+export async function getZodiacById(id) {
+    const resp = await client.from('zodiacs_table').select('*').match({ id }).single();
+    return resp.data;
+}
