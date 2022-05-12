@@ -15,7 +15,7 @@ export function renderZodiac(zodiac) {
     const a = document.createElement('a');
     a.href = `./zodiac-details/?id=${zodiac.id}`;
 
-    div.append(h1, img, p);
-    a.append(div);
-    return a;
+    div.append(a, img, p);
+    a.append(h1);
+    return div;
 }
