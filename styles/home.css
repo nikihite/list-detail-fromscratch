@@ -3,8 +3,8 @@ body {
 }
 
 #zodiacs img {
-    width: 280px;
-    height: 330px;
+    width: 380px;
+    height: 430px;
     border: 2px solid white;
     border-radius: 50%;
     padding: 15px;
@@ -17,14 +17,12 @@ body {
 }
 
 h1 {
-    border: 3px dotted white;
     margin-left: 50px;
     margin-right: 50px;
     text-align: center;
-    font-family: fantasy;
-    font-size: 35px;
+    font-family: Trattatello, fantasy;
+    font-size: 50px;
     color: white;
-    border-radius: 50px;
 }
 
 #zodiacs {
@@ -69,4 +67,7 @@ hr {
 
 a {
     color: lightblue;
+}
+a:hover {
+    text-decoration-color: hotpink;
 }

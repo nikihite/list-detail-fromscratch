@@ -29,7 +29,7 @@ export function renderZodiacList(zodiac) {
     img.src = zodiac.image;
 
     const p = document.createElement('p');
-    p.textContent = `${zodiac.name} are the ${zodiac.number} air sign of the zodiac. Under the tropical zodiac, the sun transits this sign between ${zodiac.birth_range}. ${zodiac.name} are ruled by ${zodiac.ruling_planet}, and their symbol is ${zodiac.symbol}`;
+    p.textContent = `${zodiac.name} is the ${zodiac.number} air sign of the zodiac. Under the tropical zodiac, the sun transits this sign between ${zodiac.birth_range}. ${zodiac.name} are ruled by ${zodiac.ruling_planet}, and their symbol is ${zodiac.symbol}`;
 
     div.append(h1, img, p);
     return div;
